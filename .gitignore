@@ -1,0 +1,41 @@
+# Fichiers de compilation PyInstaller
+build/
+dist/
+*.spec
+
+# Exécutables compilés
+*.exe
+
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers d'environnement
+.env
+.venv
+venv/
+
+# Fichiers IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+
+# Exécutables compilés (optionnel - décommentez si vous ne voulez pas les versionner)
+# *.exe
+# Bouchonneur*.exe 
