@@ -1,0 +1,38 @@
+<!--
+*******************************************************************************
+Date: mercredi 29 janvier 2025 (10:56:02)
+Interface: ICIRServiceBinding
+Definition: WSDL\CONTRAT_ICIR_EXP_1.2.1\\DESIR_ICIR_EXP_1.0.0f.wsdl
+Operation: rechercherInsAvecTraitsIdentite
+Endpoint: https://qualiflps.services-ps.ameli.fr/lps
+TLS:Tls12
+Mots clés utilisés: 
+$DesirCertificatP12 = 2500266325
+$DesirIdFacturation = 991111022
+$DesirSecteurActivite = SA07
+$DesirCodeSpecialite = SM24
+Status HTTP: 200 OK
+*******************************************************************************
+Temps de réponse: 750,0728ms
+Réponse Conforme au Schéma WSDL : OK
+*******************************************************************************
+Entetes http :
+HTTP/1.1 OK OK
+X-ORACLE-DMS-ECID : 9c209ecb-a91e-405c-bee5-07157ee45705-00013a32
+Content-Length : 477
+Content-Type : application/soap+xml; charset=utf-8
+Date : Wed, 29 Jan 2025 09:56:02 GMT
+*******************************************************************************
+-->
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+  <env:Body xmlns:S="http://www.w3.org/2003/05/soap-envelope" xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+    <RESULTAT xmlns="http://www.cnamts.fr/INSiResultat" xmlns:ns0="http://www.cnamts.fr/INSiRecVit" xmlns:ns1="http://www.cnamts.fr/INSiRecSans">
+      <CR>
+        <CodeCR>02</CodeCR>
+        <LibelleCR>Plusieurs identites trouvees</LibelleCR>
+      </CR>
+    </RESULTAT>
+  </env:Body>
+</soap:Envelope>

@@ -1,0 +1,27 @@
+{
+  "test_name": "Bouchon Test 1",
+  "description": "Premier bouchon de test pour Ségur INS",
+  "version": "1.0",
+  "created_date": "2025-01-05",
+  "test_data": {
+    "patient_id": "12345",
+    "patient_name": "Jean Dupont",
+    "insurance_number": "INS123456789",
+    "response_code": "200",
+    "response_message": "Succès"
+  },
+  "mock_response": {
+    "status": "success",
+    "data": {
+      "patient": {
+        "id": "12345",
+        "name": "Jean Dupont",
+        "insurance": "INS123456789"
+      },
+      "coverage": {
+        "active": true,
+        "type": "standard"
+      }
+    }
+  }
+} 

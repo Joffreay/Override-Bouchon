@@ -10,6 +10,7 @@ Application graphique moderne pour déployer des fichiers bouchons.
 - **Déploiement automatique** avec suppression des anciens fichiers `.do`
 - **Support multi-plateforme** (Windows et macOS)
 - **Design responsive** avec icônes et animations
+- **Interface spacieuse** avec hauteur automatiquement adaptée (700x[calculée])
 
 ## 📁 Structure du projet
 

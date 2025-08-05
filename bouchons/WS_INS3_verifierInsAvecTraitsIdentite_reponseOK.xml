@@ -1,0 +1,12 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+   <env:Body xmlns:S="http://www.w3.org/2003/05/soap-envelope" xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+      <ns1:ResultatUnitaire xmlns:ns3="http://www.cnamts.fr/MRA/INSSansDates" xmlns:ns2="http://www.w3.org/2003/05/soap-envelope" xmlns:ns0="http://www.cnamts.fr/INSiLot2/REQueteUnitaire" xmlns:ns4="http://www.cnamts.fr/MRA/CommunLot" xmlns:ns1="http://www.cnamts.fr/INSiLot2/REPUnitaire">
+         <ns1:CrUnitaire>
+            <ns4:CR>
+               <ns4:Code>00</ns4:Code>
+               <ns4:Libelle>OK INS vérifié</ns4:Libelle>
+            </ns4:CR>
+         </ns1:CrUnitaire>
+      </ns1:ResultatUnitaire>
+   </env:Body>
+</soap:Envelope>

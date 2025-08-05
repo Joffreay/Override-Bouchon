@@ -1,0 +1,32 @@
+{
+  "test_name": "Bouchon Test 3",
+  "description": "Troisième bouchon de test pour Ségur INS",
+  "version": "1.0",
+  "created_date": "2025-01-05",
+  "test_data": {
+    "patient_id": "11111",
+    "patient_name": "Pierre Durand",
+    "insurance_number": "INS111222333",
+    "response_code": "200",
+    "response_message": "Succès avec données partielles"
+  },
+  "mock_response": {
+    "status": "partial_success",
+    "data": {
+      "patient": {
+        "id": "11111",
+        "name": "Pierre Durand",
+        "insurance": "INS111222333"
+      },
+      "coverage": {
+        "active": true,
+        "type": "premium",
+        "expiry_date": "2025-12-31"
+      },
+      "warnings": [
+        "Données de couverture partielles",
+        "Vérification manuelle recommandée"
+      ]
+    }
+  }
+} 

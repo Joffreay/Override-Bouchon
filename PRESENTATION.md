@@ -13,7 +13,7 @@
 #### ✅ **Nouvelle version - Bouchonneur 🤖**
 - Nom : "Bouchonneur 🤖" (plus amical et mémorable)
 - Design : Interface moderne avec thème sombre
-- Taille : 700x500 pixels (plus spacieux)
+- Taille : 700x[calculée] pixels (hauteur automatiquement adaptée)
 - Style : Professionnel avec couleurs attrayantes
 
 ## 🎨 Améliorations visuelles
@@ -51,7 +51,7 @@ Couleurs principales :
 - Gestion d'erreurs complète
 
 ### ✨ Améliorations apportées
-- **Interface plus spacieuse** : 700x500 au lieu de 600x400
+- **Interface plus spacieuse** : 700x[calculée] au lieu de 600x400
 - **Boutons plus grands** : Meilleure accessibilité
 - **Couleurs contrastées** : Meilleure lisibilité
 - **Icônes emoji** : Expérience utilisateur améliorée
@@ -96,7 +96,7 @@ Couleurs principales :
 | Aspect | Ancienne version | Nouvelle version |
 |--------|------------------|------------------|
 | **Nom** | Déployeur de bouchons Ségur INS | Bouchonneur 🤖 |
-| **Taille fenêtre** | 600x400 | 700x500 |
+| **Taille fenêtre** | 600x400 | 700x[calculée] |
 | **Thème** | Gris clair | Sombre moderne |
 | **Police** | Arial | Segoe UI |
 | **Couleurs** | Gris/Blanc | Palette moderne |
