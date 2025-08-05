@@ -105,10 +105,41 @@ def create_bouchon_dir():
         except Exception as e:
             messagebox.showerror("Erreur", f"Impossible de créer le dossier bouchons : {e}")
 
+def calculate_optimal_height():
+    """Calcule la hauteur optimale de la fenêtre basée sur le contenu"""
+    # Hauteurs approximatives des éléments (en pixels)
+    header_height = 150  # Logo + titre + sous-titre (augmenté)
+    bouchon_frame_height = 160  # Section sélection bouchon (augmenté)
+    dmp_frame_height = 140  # Section DmpConnect-JS2 (augmenté)
+    deploy_button_height = 80  # Bouton de déploiement (augmenté)
+    status_footer_height = 80  # Status bar + footer (augmenté)
+    padding = 150  # Marges et espacement (augmenté)
+    
+    total_height = header_height + bouchon_frame_height + dmp_frame_height + deploy_button_height + status_footer_height + padding
+    
+    # Ajuster selon la résolution d'écran
+    try:
+        import tkinter as tk
+        temp_root = tk.Tk()
+        screen_height = temp_root.winfo_screenheight()
+        temp_root.destroy()
+        
+        # Limiter à 85% de la hauteur d'écran (augmenté)
+        max_height = int(screen_height * 0.85)
+        if total_height > max_height:
+            total_height = max_height
+    except:
+        pass
+    
+    return max(900, total_height)  # Minimum 900px (augmenté)
+
 # Interface utilisateur
 root = tk.Tk()
 root.title("Bouchonneur 🤖 - Déployeur de bouchons")
-root.geometry("700x500")
+
+# Calculer la hauteur optimale
+optimal_height = calculate_optimal_height()
+root.geometry(f"700x{optimal_height}")
 root.resizable(True, True)
 
 # Configuration des couleurs modernes

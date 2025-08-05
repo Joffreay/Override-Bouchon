@@ -1,5 +1,55 @@
 # 📝 Changelog - Bouchonneur 🤖
 
+## Version 1.2 - Hauteur automatiquement adaptée
+
+### 🎯 Modifications apportées
+
+#### Interface utilisateur
+- **Hauteur automatique** : Calcul dynamique de la hauteur optimale
+- **Fonction `calculate_optimal_height()`** : Calcule la hauteur basée sur le contenu
+- **Hauteur minimale** : 900px au lieu de 650px
+- **Limite d'écran** : 85% de la hauteur d'écran au lieu de 80%
+
+#### Améliorations techniques
+- **Hauteurs des sections** : Augmentées pour assurer la visibilité complète
+- **Padding** : Augmenté pour un meilleur espacement
+- **Bouton de déploiement** : Maintenant toujours visible
+- **Status bar et footer** : Toujours visibles
+
+### 🚀 Exécutable mis à jour
+
+- **Hauteur calculée** : Adaptée automatiquement au contenu
+- **Visibilité complète** : Tous les éléments sont maintenant visibles
+- **Expérience utilisateur** : Interface plus spacieuse et confortable
+
+### 📋 Résumé des changements
+
+| Élément | Avant | Après |
+|---------|-------|-------|
+| **Hauteur minimale** | 650px | 900px |
+| **Header** | 120px | 150px |
+| **Section bouchon** | 140px | 160px |
+| **Section DmpConnect** | 120px | 140px |
+| **Bouton déploiement** | 60px | 80px |
+| **Status + Footer** | 50px | 80px |
+| **Padding** | 100px | 150px |
+| **Limite écran** | 80% | 85% |
+
+### 🎉 Avantages
+
+- **Visibilité complète** : Tous les éléments sont maintenant visibles
+- **Adaptation automatique** : La hauteur s'adapte au contenu
+- **Meilleur espacement** : Plus d'espace entre les éléments
+- **Expérience utilisateur** : Interface plus confortable à utiliser
+
+### 📁 Fichiers modifiés
+
+- ✅ `deploy_bouchon_gui.py` - Fonction de calcul de hauteur optimale
+- ✅ `README.md` - Documentation mise à jour
+- ✅ `PRESENTATION.md` - Présentation mise à jour
+
+---
+
 ## Version 1.1 - Simplification du titre
 
 ### 🎯 Modifications apportées
