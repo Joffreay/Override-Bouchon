@@ -4,13 +4,10 @@ Application graphique moderne pour déployer des fichiers bouchons.
 
 ## 🚀 Fonctionnalités
 
-- **Interface graphique moderne** avec design sombre et couleurs attrayantes
 - **Détection automatique** du dossier DmpConnect-JS2
 - **Sélection de fichiers bouchons** depuis le dossier `bouchons/` dans le répertoire d'installation
 - **Déploiement automatique** avec suppression des anciens fichiers `.do`
 - **Support multi-plateforme** (Windows et macOS)
-- **Design responsive** avec icônes et animations
-- **Interface spacieuse** avec hauteur automatiquement adaptée (700x[calculée])
 - **Privilèges administrateur** automatiques sur Windows
 
 ## 📁 Structure du projet
@@ -73,7 +70,7 @@ pyinstaller --onefile --noconsole --name "Bouchonneur" deploy_bouchon_gui.py
 
 ### 1. Préparation des fichiers bouchons
 
-**Important** : Placez vos fichiers bouchons dans le dossier `bouchons/` **à côté de l'exécutable** (pas dans le dossier de développement).
+**Important** : Placez vos fichiers bouchons dans le dossier `bouchons/` **à côté de l'exécutable**. Si le bouchonneur de trouve pas vos fichiers bouchons, vérifiez le dossier inscrit et rafraîchissez la liste. 
 
 Structure recommandée :
 ```
@@ -158,15 +155,7 @@ VotreDossier/
 - Placez vos fichiers bouchons dans ce dossier
 - Utilisez le bouton "🔄 Rafraîchir la liste"
 
-## 🎉 Nouveautés v1.0
-
-- ✨ **Nouveau design** : Interface moderne avec thème sombre
-- 🤖 **Nouveau nom** : "Bouchonneur 🤖" plus amical et mémorable
-- 🎨 **Améliorations visuelles** : Couleurs, icônes et typographie
-- 📱 **Interface responsive** : Adaptation à différentes tailles d'écran
-- 🚀 **Expérience utilisateur** : Boutons plus grands et plus accessibles
-- 📂 **Chemin correct** : Utilise le dossier bouchons dans le répertoire d'installation
 
 ## 📝 Version
 
-Version 1.0 - Compatible Windows et macOS - Design moderne 🤖 
+Version 1.0 - Compatible Windows et macOS 🤖 
