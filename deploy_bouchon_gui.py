@@ -152,7 +152,7 @@ def create_bouchon_dir():
 def calculate_optimal_height():
     """Calcule la hauteur optimale de la fenêtre basée sur le contenu"""
     # Hauteurs approximatives des éléments (en pixels)
-    header_height = 150  # Logo + titre + sous-titre (augmenté)
+    header_height = 100  # Titre + sous-titre (réduit car logo supprimé)
     bouchon_frame_height = 160  # Section sélection bouchon (augmenté)
     dmp_frame_height = 140  # Section DmpConnect-JS2 (augmenté)
     deploy_button_height = 80  # Bouton de déploiement (augmenté)
@@ -238,10 +238,6 @@ header_frame.pack(fill=tk.X, pady=(0, 25))
 # Logo et titre
 title_frame = tk.Frame(header_frame, bg=COLORS['bg_primary'])
 title_frame.pack()
-
-logo_label = tk.Label(title_frame, text="🤖", font=("Segoe UI", 48), 
-                     bg=COLORS['bg_primary'], fg=COLORS['accent'])
-logo_label.pack()
 
 title_label = tk.Label(title_frame, text="Bouchonneur 🤖", 
                       font=("Segoe UI", 24, "bold"), 
