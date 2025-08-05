@@ -3,8 +3,52 @@ import shutil
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
 import sys
+import ctypes
+import subprocess
 
 TARGET_NAME = "overrideinsianswer.do"
+
+def is_admin():
+    """Vérifie si l'application a les privilèges d'administrateur"""
+    try:
+        return ctypes.windll.shell32.IsUserAnAdmin()
+    except:
+        return False
+
+def run_as_admin():
+    """Relance l'application avec les privilèges d'administrateur"""
+    try:
+        if getattr(sys, 'frozen', False):
+            # Application compilée
+            script = sys.executable
+        else:
+            # Application en mode développement
+            script = sys.argv[0]
+        
+        # Relancer avec les privilèges d'administrateur
+        ctypes.windll.shell32.ShellExecuteW(None, "runas", script, None, None, 1)
+        sys.exit(0)
+    except Exception as e:
+        messagebox.showerror("Erreur", f"Impossible de lancer en tant qu'administrateur : {e}")
+        sys.exit(1)
+
+def check_admin_privileges():
+    """Vérifie et demande les privilèges d'administrateur si nécessaire"""
+    if sys.platform == "win32" and not is_admin():
+        result = messagebox.askyesno(
+            "Privilèges administrateur requis",
+            "Cette application nécessite des privilèges d'administrateur pour fonctionner correctement.\n\n"
+            "Voulez-vous relancer l'application en tant qu'administrateur ?",
+            icon='warning'
+        )
+        if result:
+            run_as_admin()
+        else:
+            messagebox.showwarning(
+                "Attention",
+                "L'application peut ne pas fonctionner correctement sans les privilèges d'administrateur.\n\n"
+                "Certaines opérations de déploiement peuvent échouer."
+            )
 
 def get_application_dir():
     """Retourne le répertoire d'installation de l'application"""
@@ -136,6 +180,9 @@ def calculate_optimal_height():
 # Interface utilisateur
 root = tk.Tk()
 root.title("Bouchonneur 🤖 - Déployeur de bouchons")
+
+# Vérifier les privilèges d'administrateur (Windows uniquement)
+check_admin_privileges()
 
 # Calculer la hauteur optimale
 optimal_height = calculate_optimal_height()

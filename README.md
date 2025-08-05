@@ -11,6 +11,7 @@ Application graphique moderne pour déployer des fichiers bouchons.
 - **Support multi-plateforme** (Windows et macOS)
 - **Design responsive** avec icônes et animations
 - **Interface spacieuse** avec hauteur automatiquement adaptée (700x[calculée])
+- **Privilèges administrateur** automatiques sur Windows
 
 ## 📁 Structure du projet
 
@@ -88,6 +89,8 @@ VotreDossier/
 ### 2. Lancement de l'application
 
 - **Windows** : Double-cliquez sur `Bouchonneur.exe`
+  - L'application demandera automatiquement les privilèges d'administrateur
+  - Acceptez l'élévation des privilèges pour un fonctionnement optimal
 - **macOS** : Double-cliquez sur `Bouchonneur`
 
 ### 3. Déploiement d'un bouchon
