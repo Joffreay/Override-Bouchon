@@ -101,22 +101,6 @@ VotreDossier/
    - Le renomme en `overrideinsianswer.do`
    - Affiche une confirmation de succès
 
-## 🎨 Interface utilisateur
-
-### Design moderne
-- **Thème sombre** avec couleurs professionnelles
-- **Icônes emoji** pour une meilleure expérience utilisateur
-- **Police Segoe UI** pour une lisibilité optimale
-- **Boutons stylisés** avec effets de survol
-
-### Éléments de l'interface
-- 🤖 **Logo et titre** : Bouchonneur 🤖
-- 📁 **Sélection de fichiers** : Liste déroulante avec bouton de rafraîchissement
-- 📂 **Chemin du dossier** : Affichage du chemin du dossier bouchons utilisé
-- 🎯 **Configuration du répertoire** : Détection automatique + sélection manuelle
-- 🚀 **Bouton de déploiement** : Grand bouton d'action principal
-- 📊 **Barre de statut** : Indication de l'état de l'application
-
 ## 🔧 Chemins de détection automatique
 
 ### Windows
